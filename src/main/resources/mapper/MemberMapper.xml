@@ -23,4 +23,8 @@
         SELECT * FROM member.member
         WHERE username LIKE #{username}
     </select>
+
+    <select id="now" resultType="String" >
+        SELECT NOW()
+    </select>
 </mapper>

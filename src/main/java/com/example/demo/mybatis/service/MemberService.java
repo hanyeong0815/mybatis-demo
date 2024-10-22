@@ -20,6 +20,7 @@ public class MemberService implements MemberCreateUseCase {
                 .build();
 
         membermapper.insert(member);
+        System.out.println(membermapper.now());
 
         return membermapper.findByUsername(dto.username());
     }

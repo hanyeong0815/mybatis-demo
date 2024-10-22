@@ -1,11 +1,9 @@
 package com.example.demo.mybatis.mapper;
 
-import com.example.demo.mybatis.domain.Member;
+import com.example.demo.mybatis.common.DefaultMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface MemberMapper {
-    void insert(Member member);
-    Member findById(Long id);
-    Member findByUsername(String username);
+public interface MemberMapper extends DefaultMapper {
+
 }
